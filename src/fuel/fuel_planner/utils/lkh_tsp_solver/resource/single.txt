@@ -1,12 +1,13 @@
-NAME : single.200.tour
-COMMENT : Length = 200
-COMMENT : Found by LKH [Keld Helsgaun] Tue Jul 12 10:24:58 2022
+NAME : single.300.tour
+COMMENT : Length = 300
+COMMENT : Found by LKH [Keld Helsgaun] Sat Oct  7 10:03:16 2023
 TYPE : TOUR
-DIMENSION : 4
+DIMENSION : 5
 TOUR_SECTION
 1
 3
 4
 2
+5
 -1
 EOF

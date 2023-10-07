@@ -1,0 +1,41 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/root/shared_volume/fuel_gazebo_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/fuel_planner/active_perception/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/fuel_planner/bspline/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/fuel_planner/bspline_opt/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/vision_opencv/cv_bridge/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/fuel_planner/exploration_manager/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/vision_opencv/image_geometry/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/fuel_planner/utils/lkh_tsp_solver/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/uav_simulator/local_sensing/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/uav_simulator/Utils/multi_map_server/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/fuel_planner/path_searching/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/fuel_planner/plan_env/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/fuel_planner/plan_manage/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/fuel_planner/poly_traj/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/uav_simulator/Utils/pose_utils/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/uav_simulator/Utils/quadrotor_msgs/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/uav_simulator/so3_control/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/uav_simulator/so3_disturbance_generator/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/uav_simulator/so3_quadrotor_simulator/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/fuel_planner/traj_utils/include/**",
+        "/root/shared_volume/fuel_gazebo_ws/src/fuel_refactored/uav_simulator/Utils/uav_utils/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

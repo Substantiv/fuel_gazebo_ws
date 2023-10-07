@@ -10,6 +10,8 @@
 
 #include <plan_manage/backward.hpp>
 
+#include <tf_conversions/tf_eigen.h>
+
 namespace backward {
     backward::SignalHandling sh;
 }
@@ -19,6 +21,7 @@ using fast_planner::PolynomialTraj;
 using fast_planner::PerceptionUtils;
 
 ros::Publisher cmd_vis_pub, pos_cmd_pub, traj_pub;
+ros::Publisher fast_goal_pub;
 nav_msgs::Odometry odom;
 quadrotor_msgs::PositionCommand cmd;
 
@@ -309,6 +312,13 @@ void cmdCallback(const ros::TimerEvent &e) {
     }
     traj_cmd_.push_back(pos);
     last_time = time_now;
+
+    geometry_msgs::PoseStamped fastGoal;
+    fastGoal.pose.position.x = pos(0);
+    fastGoal.pose.position.y = pos(1);
+    fastGoal.pose.position.z = pos(2);
+    fastGoal.pose.orientation = tf::createQuaternionMsgFromYaw(cmd.yaw);
+    fast_goal_pub.publish(fastGoal);
 }
 
 void test() {
