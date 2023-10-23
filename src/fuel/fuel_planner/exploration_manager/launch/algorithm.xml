@@ -114,11 +114,17 @@
     <param name="frontier/min_view_finish_fraction" value="0.2" type="double"/>;
 
     <!-- Perception utils -->
-    <param name="perception_utils/top_angle" value="0.56125" type="double"/>;
+    <!-- <param name="perception_utils/top_angle" value="0.56125" type="double"/>;
     <param name="perception_utils/left_angle" value="0.69222" type="double"/>;
     <param name="perception_utils/right_angle" value="0.68901" type="double"/>;
     <param name="perception_utils/max_dist" value="4.5" type="double"/>;
-    <param name="perception_utils/vis_dist" value="1.0" type="double"/>;
+    <param name="perception_utils/vis_dist" value="1.0" type="double"/>; -->
+
+    <param name="perception_utils/top_angle" value="0.56125" type="double"/>;
+    <param name="perception_utils/left_angle" value="1" type="double"/>;
+    <param name="perception_utils/right_angle" value="1" type="double"/>;
+    <param name="perception_utils/max_dist" value="10" type="double"/>;
+    <param name="perception_utils/vis_dist" value="10.0" type="double"/>;
 
 
     <param name="heading_planner/yaw_diff" value="$(eval 30 * 3.1415926 / 180.0)" type="double"/>

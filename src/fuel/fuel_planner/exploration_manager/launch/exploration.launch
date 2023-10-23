@@ -25,7 +25,7 @@
     <arg name="box_max_y" value="15.0"/>
     <arg name="box_max_z" value=" 2.0"/>
 
-    <arg name="odometry_topic" default="$(arg odom_topic)"/>
+    <arg name="odometry_topic" default="/mavros/local_position/odom"/>
     <!-- sensor pose: transform of camera frame in the world frame -->
     <!-- <arg name="sensor_pose_topic" default="/pcl_render_node/sensor_pose"/> -->
     <arg name="sensor_pose_topic" default="/mavros/local_position/pose"/>
@@ -35,6 +35,7 @@
     <!-- <arg name="depth_topic" default="/pcl_render_node/depth"/> -->
     <arg name="depth_topic" default="/depth_camera_front/depth/image_raw"/>
     <arg name="cloud_topic" default="/pcl_render_node/cloud"/>
+    <!-- <arg name="cloud_topic" default="/depth_camera_front/depth/points"/> -->
 
     <!-- intrinsic params of the depth camera -->
     <arg name="cx" value="321.04638671875"/>
