@@ -316,7 +316,7 @@ void cmdCallback(const ros::TimerEvent &e) {
     geometry_msgs::PoseStamped fastGoal;
     fastGoal.pose.position.x = pos(0);
     fastGoal.pose.position.y = pos(1);
-    fastGoal.pose.position.z = pos(2);
+    fastGoal.pose.position.z = pos(2); 
     fastGoal.pose.orientation = tf::createQuaternionMsgFromYaw(cmd.yaw);
     fast_goal_pub.publish(fastGoal);
 }
@@ -423,7 +423,6 @@ int main(int argc, char **argv) {
     cmd_vis_pub = node.advertise<visualization_msgs::Marker>("planning/position_cmd_vis", 10);
     pos_cmd_pub = node.advertise<quadrotor_msgs::PositionCommand>("/position_cmd", 50);
     traj_pub = node.advertise<visualization_msgs::Marker>("planning/travel_traj", 10);
-    
     fast_goal_pub = node.advertise<geometry_msgs::PoseStamped>("/fast_goal", 50);
     
     ros::Timer cmd_timer = node.createTimer(ros::Duration(0.01), cmdCallback);

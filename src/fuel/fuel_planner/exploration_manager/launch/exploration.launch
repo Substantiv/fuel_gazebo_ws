@@ -11,6 +11,9 @@
   <!-- topic of your odometry such as VIO or LIO -->
   <arg name="odom_topic" default="/state_ukf/odom" />
 
+  <!-- 获取深度相机的位姿 -->
+  <node pkg="sensor_transform" type="sensor_transform" name="sensor_transform" output="screen" />
+
   <!-- main algorithm params -->
   <include file="$(find exploration_manager)/launch/algorithm.xml">
 
@@ -28,7 +31,7 @@
     <arg name="odometry_topic" default="/mavros/local_position/odom"/>
     <!-- sensor pose: transform of camera frame in the world frame -->
     <!-- <arg name="sensor_pose_topic" default="/pcl_render_node/sensor_pose"/> -->
-    <arg name="sensor_pose_topic" default="/mavros/local_position/pose"/>
+    <arg name="sensor_pose_topic" default="/depth_camera_pose"/>
     <!-- depth topic: depth image, 640x480 by default -->
     <!-- cloud topic: point cloud measurement  -->
     <!-- subscribe ONLY TO ONE of the two topics -->

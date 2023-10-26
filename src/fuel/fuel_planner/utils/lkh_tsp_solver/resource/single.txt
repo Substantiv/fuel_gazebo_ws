@@ -1,6 +1,6 @@
-NAME : single.500.tour
-COMMENT : Length = 500
-COMMENT : Found by LKH [Keld Helsgaun] Wed Oct 25 02:25:12 2023
+NAME : single.400.tour
+COMMENT : Length = 400
+COMMENT : Found by LKH [Keld Helsgaun] Thu Oct 26 13:43:31 2023
 TYPE : TOUR
 DIMENSION : 3
 TOUR_SECTION
